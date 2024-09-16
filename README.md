@@ -30,10 +30,13 @@
 
 → [Voltar ao topo](#topo)
 
-# :heavy_check_mark: Entrega da sprint 1 <span id="entrega"></span>
+# ☑️ Entrega da sprint 1 <span id="entrega"></span>
 
 ## Protótipo navegável
 Neste protótipo foi pensado o funcionamento geral do aplicativo final, onde todas as telas e possíveis funções já foram pensadas e previamente estruturadas.
+
+[Protótipo no Figma](https://www.figma.com/proto/WSJS4CcqwjI80VDZr5Ekrx/FreelaLink?node-id=14-40&starting-point-node-id=14%3A40&t=GZhGdRHMv2HucgVS-1)
+
 
 → [Voltar ao topo](#topo)
 
@@ -44,14 +47,11 @@ Neste protótipo foi pensado o funcionamento geral do aplicativo final, onde tod
 | <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" /> |  Prototipagem do produto  |
 | <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> | Linguagem escolhida para em conjunto com o React Native desenvolver o FrontEnd |
 | <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> |  Framework para utilização da estrutura React  no desenvolvimento de aplicativos mobiles  |
+| <img src="https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white" /> | Framework com uma grande variedade de ferramentas para auxiliar no desenvolvimento de aplicativos nativos de React |
 | <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> | Linguagem escolhida para em conjunto com o Node.JS e o Express desenvolver o BackEnd |
 | <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" /> | Interpretador para o FrontEnd e BackEnd |
 | <img src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" > | Framework que proporciona ferramentas de construção de API de uma maneira rápida e prática |
 | <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> | Gerenciador de banco de dados objeto relacional |
-
-### Modelo de dados
-
-→ [Voltar ao topo](#topo)
 
 # :computer: Tecnologias da sprint <span id="tecnologia"></span>
 
