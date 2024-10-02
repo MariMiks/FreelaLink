@@ -26,7 +26,8 @@
 
 ## Backlog sprint 1
 
-![sprint1](https://github.com/user-attachments/assets/ba788d63-7db8-4e81-8dfa-4905b5afd559)
+![sprint1](https://github.com/user-attachments/assets/be311bc6-9dfa-4048-ac3b-c64d6b25aa69)
+
 
 → [Voltar ao topo](#topo)
 
