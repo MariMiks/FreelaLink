@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import { style } from "./styles";
 import Logo from '../../assets/logo.png';
 
-import { Text, View, Image, TextInput, TouchableOpacity, Alert, ActivityIndicator} from 'react-native';
+import { Text, View, Image, Alert} from 'react-native';
 import { MaterialIcons, Octicons } from '@expo/vector-icons'
 import { themes } from "../../global/themes";
 import { Input } from "../../components/input";
 import { Button } from "../../components/button";
+import { useNavigation, NavigationProp } from "@react-navigation/native";
 
 export default function Login() {
+
+    const navigation = useNavigation<NavigationProp<any>>();
+
     const [email, setEmail] = useState('mariana@gmail.com');
     const [senha, setSenha] = useState('123');
     const [showSenha, setShowSenha] = useState(false);
@@ -17,30 +21,17 @@ export default function Login() {
     async function getLogin(){
         try{
             setLoading(true)
-
             if(!email || !senha){
                 return Alert.alert('Atenção', 'Informe os campos obrigatórios!')
             }
             
-            setTimeout(() => {
-                if(email == 'mariana@gmail.com' && senha == '123'){
-                    Alert.alert('Logado com sucesso')
-                } else {
-                    Alert.alert('Usuário não encontrado')
-                }
-                setLoading(false)
-                
-            }, 3000)
-            
-            
+            navigation.reset({routes:[{name: 'BottomRoutes'}]})
             console.log('Logado com sucesso')
         } catch (err) {
             console.log(err)
-        } 
-        setLoading(false)
-        // finally {
-        //     setLoading(false)
-        // }
+        } finally {
+            setLoading(false)
+        }
     }
 
     return (
@@ -62,7 +53,7 @@ export default function Login() {
                     onChangeText={setSenha} 
                     title="Senha" 
                     IconRight={Octicons} 
-                    IconRightName={showSenha?'eye':'eye-closed'}
+                    IconRightName={showSenha?'eye-closed':'eye'}
                     secureTextEntry={showSenha}
                     onIconRigthPress={() => setShowSenha(!showSenha)}
                 />

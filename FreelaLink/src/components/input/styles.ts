@@ -14,7 +14,9 @@ export const style = StyleSheet.create({
         borderRadius: 40,
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: themes.colors.bgScreen
+        backgroundColor: themes.colors.bgScreen,
+        borderWidth: 1,
+        borderColor: themes.colors.lightCyan
     },
     input:{
         width: '90%',
