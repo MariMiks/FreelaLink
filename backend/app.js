@@ -1,7 +1,24 @@
+require("dotenv").config();
+const PORTA_EX = process.env.PORT || 5000;
 const express = require('express');
+const db = require('./config/db');
+const { default: servicoRouter } = require("./routes/servicoRoutes");
+
+db.sync()
+    .then(() => {
+        console.log("Banco de dados sincronizado com sucesso.");
+    })
+    .catch(err => {
+        console.error("Erro ao sincronizar com o banco de dados:", err);
+    });
+
+
 const app = express();
-const port = 5000;
+app.use(express.json());
 
-app.get('/', (req, res) => { res.send('Primeiro GET') });
+app.use('/servico', servicoRouter);
 
-app.listen(port, () => console.log(`Servidor rodando na ${port}`));
+
+
+
+app.listen(PORTA_EX, () => console.log(`Servidor rodando na ${PORTA_EX}`));
