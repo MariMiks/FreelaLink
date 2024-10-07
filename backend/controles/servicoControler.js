@@ -16,18 +16,40 @@ exports.addServico = async (req, res) => {
             qntd_pessoa: req.body.qntd_pessoa
         })
         res.status(200).json(users);
-    } catch(err){
+    } catch (err) {
         res.status(500).json({ message: err });
     }
 };
 
-exports.listServico = async (req, res) => {
+exports.listTodosServico = async (req, res) => {
     try {
-        const servico = await Servico.findAll();
+        const servicos = await Servico.findAll({
+            include: [
+                { model: Usuario, as: 'solicitante' },
+                { model: Usuario, as: 'prestador' }
+            ]
+        });
+
         res.status(200).json(users);
         console.log('passou na listagem')
-    } catch(err) {
+    } catch (err) {
         res.status(500).json({ message: err });
-        res.status(404).json({ message: err });
+    }
+}
+
+exports.listUmServico = async (req, res) => {
+    try {
+        const servico = await Servico.findOne({
+            where: {
+                id: req.params.id
+            }
+        })
+        if (dado != null) {
+            res.status(302).json(dado);
+        } else {
+            res.status(404).json({ message: "Serviço não encontrado" })
+        }
+    } catch (err) {
+        res.status(404).json({ message: err })
     }
 }

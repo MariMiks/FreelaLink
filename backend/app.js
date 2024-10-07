@@ -1,8 +1,11 @@
-require("dotenv").config();
-const PORTA_EX = process.env.PORT || 5000;
 const express = require('express');
 const db = require('./config/db');
-const { default: servicoRouter } = require("./routes/servicoRoutes");
+require("dotenv").config();
+
+const PORTA_EX = process.env.PORT || 5000;
+const servicoRouter = require("./routes/servicoRoutes");
+const usuarioRouter = require("./routes/usuarioRoutes")
+require('./relacoes/relacoes')
 
 db.sync()
     .then(() => {
@@ -17,6 +20,7 @@ const app = express();
 app.use(express.json());
 
 app.use('/servico', servicoRouter);
+app.use('/usuario', usuarioRouter);
 
 
 

@@ -1,7 +1,6 @@
-import Usuario from './Usuario';
-
 const { DataTypes } = require('sequelize');
 const db = require('../config/db');
+const Usuario = require('./Usuario')
 
 const Servico = db.define('Servico', {
     id:{
@@ -40,11 +39,19 @@ const Servico = db.define('Servico', {
     },
     id_solicitante:{
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        references: {
+            model: Usuario,
+            key: 'id'
+        }
     },
     id_prestador: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        references: {
+            model: Usuario,
+            key: 'id'
+        }
     },
     qntd_pessoa:{
         type: DataTypes.INTEGER,
@@ -55,9 +62,4 @@ const Servico = db.define('Servico', {
     timestamps: true
 })
 
-Servico.belongsTo(Usuario, {foreignKey:{name:id_solicitante}});
-Servico.belongsTo(Usuario, {foreignKey:{name:id_prestador}});
-Usuario.Servico = Usuario.hasMany(Servico, {foreignKey:"id_solicitante"});
-Servico.Usuario = Servico.hasMany(Usuario, {foreignKey:"id_prestador"});
-
-export default Servico;
+module.exports = Servico;
