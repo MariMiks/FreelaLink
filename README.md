@@ -28,8 +28,8 @@
 | Sprint |   Entrega    |              Status            | Relatório |
 |:------:|:------------:|:------------------------------:|:---------:|
 | 01     | 09/09/2024   | :white_check_mark: Finalizada! | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint1) |
-| 02     | 04/10/2024   | :construction: Em andamento    | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint2) |
-| 03     | 25/10/2024   | Não iniciada                   | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint3) |
+| 02     | 04/10/2024   | :white_check_mark: Finalizada! | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint2) |
+| 03     | 25/10/2024   | :construction: Em andamento    | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint3) |
 | 04     | 18/11/2024   | Não iniciada                   | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint4) |
 | 05     | 06/12/2024   | Não iniciada                   | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint4) |
 
