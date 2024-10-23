@@ -21,6 +21,22 @@
 → [Voltar ao topo](#topo)
 
 # :pushpin: Planejamento <span id="planejamento"></span>
+<p align="justify">
+  Foram definidas estruturas de sprints para melhor desenvolvimento deste projeto
+</p>
+
+| Sprint |   Entrega    |              Status            | Relatório |
+|:------:|:------------:|:------------------------------:|:---------:|
+| 01     | 09/09/2024   | :white_check_mark: Finalizada! | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint1) |
+| 02     | 04/10/2024   | :white_check_mark: Finalizada! | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint2) |
+| 03     | 25/10/2024   | :construction: Em andamento    | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint3) |
+| 04     | 18/11/2024   | Não iniciada                   | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint4) |
+| 05     | 06/12/2024   | Não iniciada                   | [Ver entrega](https://github.com/MariMiks/FreelaLink/tree/sprint4) |
+
+## Épicos
+
+![epicos](https://github.com/user-attachments/assets/5f8d8d16-7748-4db5-8c54-edac2d534498)
+
 
 
 ## Backlog total
