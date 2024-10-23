@@ -38,10 +38,9 @@
 ![epicos](https://github.com/user-attachments/assets/5f8d8d16-7748-4db5-8c54-edac2d534498)
 
 
+
 ## Backlog total
 
-![backlog1](https://github.com/user-attachments/assets/e372033d-69a2-4296-aaa8-79c7bbdae34d)
-![backlog2](https://github.com/user-attachments/assets/49188968-6965-4b6f-8c67-f2765301571f)
 
 → [Voltar ao topo](#topo)
 
