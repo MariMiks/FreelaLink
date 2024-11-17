@@ -1,0 +1,27 @@
+{
+  "name": "back-freelalink",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv-ts": "^0.2.1",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "@types/pg": "^8.11.10",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "start": "tsc & node ./build/main.js",
+    "build": "tsc"
+  },
+  "author": "Mariana",
+  "license": "ISC",
+  "description": ""
+}
