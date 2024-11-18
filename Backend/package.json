@@ -12,13 +12,13 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
+    "@types/express": "^4.17.17",
     "@types/node": "^22.9.0",
     "@types/pg": "^8.11.10",
     "typescript": "^5.6.3"
   },
   "scripts": {
-    "start": "tsc & node ./build/main.js",
+    "start": "npm run build && node ./build/main.js",
     "build": "tsc"
   },
   "author": "Mariana",
