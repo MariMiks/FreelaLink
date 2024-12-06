@@ -3,6 +3,7 @@ require("dotenv-ts").config();
 import cors from "cors"
 import express  from "express"
 import UsuarioRouter from "./routes/Usuario"
+import ServicoRouter from "./routes/Servico"
 
 const PORT = (process.env.PORT ? parseInt(process.env.PORT) : 3001)
 const app = express()
@@ -12,6 +13,10 @@ app.use(express.json());
 
 app.use("/usuario", UsuarioRouter);
 console.log("Rota de usuário registradas");
+
+app.use("/servico", ServicoRouter);
+console.log("Rota de serviço registradas");
+
 
 app.listen(
     PORT,
