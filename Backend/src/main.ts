@@ -1,8 +1,8 @@
-import "dotenv-ts/config";
+require("dotenv-ts").config();
+
 import cors from "cors"
 import express  from "express"
-import UsuarioRouter from "./src/routes/Usuario"
-
+import UsuarioRouter from "./routes/Usuario"
 
 const PORT = (process.env.PORT ? parseInt(process.env.PORT) : 3001)
 const app = express()
